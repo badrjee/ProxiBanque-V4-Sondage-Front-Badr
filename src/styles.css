@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+/* Style général */
+.mid-logo{
+    height: 8rem;
+ }
+
+.principal{
+    max-height: 90vh;
+    padding: 5vh 0;
+}
+.main-head{
+    height: 20vh;
+}
+
+.content{
+    height: 70vh;
+}
+
+h2{
+    font-size: 2rem;
+    color: #179ad7;
+}
+.text-bank{
+    color: rgba(17,30,108,1.0);
+}
+
+.text-bank-light{
+    color: #179ad7;
+}
+
+.bg-bank{
+    background-color: rgba(17,30,108,1.0);
+}
+
+.bg-bank-light{
+    background-color: #179bd7;
+}
+
+/* VUE 1 spécifique */
+.pouce {
+    height: 20vh;
+}
+.pouce-ok {
+    color: green;
+}
+.pouce-no {
+    color: red;
+}
+
+
+/* VUE 1 BIS DEVIS */
+
+.bg-devis {
+    background-image: radial-gradient( rgba(23,153,184, 0.2),rgba(17,30,108,0.5)), url('/assets/img/bg-devis.jpg');
+    background-size: cover;
+}
+.bg-aurevoir {
+    background-image: radial-gradient( rgba(215, 227, 230, 0.8),rgba(17,30,108,0.5)), url('/assets/img/aurevoir.jpg');
+    background-size: cover;
+}
+.titre-devis{
+    font-size: 4rem;
+    color: #179ad7;
+    text-shadow: 1px 1px 2px white;
+}
+.contact-fixed{
+    font-size: 2rem;
+    position: fixed;
+    bottom: 6vh;
+    right: 1vh;
+}

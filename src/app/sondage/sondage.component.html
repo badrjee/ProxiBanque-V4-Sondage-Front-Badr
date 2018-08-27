@@ -1,0 +1,46 @@
+<div *ngIf="sondage && !showClient && !showReponse">
+    <div class="col-md-10 mx-auto content">
+        <div class="row h-25 text-center">
+            <div class="col">
+                <h2>Voudriez-vous adhérer à un service d'assurrance automobile ProxyBank?</h2>
+            </div>
+        </div>
+        <div class="row h-75">
+            <div class="col-6 d-flex align-items-center justify-content-center">
+                <a (click)="showClient = !showClient">
+                    <i class="far fa-thumbs-up fa-10x pouce-ok"></i>
+                </a>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-center">
+                <a (click)="showReponse = !showReponse">
+                    <i class="far fa-thumbs-down fa-10x pouce-no"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!sondage">
+    <div class="col content bg-devis">
+        <div class="row h-100 d-flex flex-column align-items-center justify-content-center">
+
+            <h1 class="titre-devis">Obtenir un devis Assurance Auto</h1>
+
+            <span class="text-white">Simple Rapide Gratuit</span>
+
+            <div class="contact-fixed d-flex flex-column">
+
+                <span class="badge badge-pill bg-bank text-white p-3">Par téléphone
+                    <i class="fas fa-phone"></i>
+                </span>
+                <span class="badge badge-pill bg-bank-light text-white p-3 mt-2">Par email
+                    <i class="fas fa-envelope"></i>
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-client *ngIf="showClient" [sondage]="sondage"></app-client>
+<app-reponse *ngIf="showReponse"></app-reponse>
